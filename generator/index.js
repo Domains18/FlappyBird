@@ -3,7 +3,10 @@ let amount = document.getElementById("amount");
 let submit = document.getElementById("submit");
 let result = document.getElementById("result");
 
+
+
 const users = [];
+
 
 submit.addEventListener("click", ()=>{
     if(names.value =="" || !amount.value){
@@ -27,11 +30,22 @@ function generateTicket(e){
         for (i=0; i<ticketLength; i++){
             let randomTicket = Math.floor(Math.random()* chars.length);
             ticket += chars.substring(randomTicket, randomTicket +1);
+            result.innerHTML = ticket;
         }
+        let copy = document.getElementById("copy");
+        copy.addEventListener('click', copyText);
+
+        function copyText(e){
+            let copyUssd = document.getElementById('result');
+            copyUssd.select();
+            document.execCommand('copy');
+            window.alert('Ticket copied Succesfully!');
+        }
+
         function saveTicket(){
             users.push(names.value, ticket);
             console.log(users);
-        }
+            }
         saveTicket();
     }
     ),1000);
