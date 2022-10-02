@@ -3,10 +3,10 @@ let amount = document.getElementById("amount");
 let submit = document.getElementById("submit");
 let result = document.getElementById("result");
 
-users = [];
+const users = [];
 
 submit.addEventListener("click", ()=>{
-    if(names.value ="" || !amount.value){
+    if(names.value =="" || !amount.value){
         window.alert("Name or amount Can't be null!")
     } else{
         if (amount.value<1000){
@@ -27,8 +27,12 @@ function generateTicket(e){
         for (i=0; i<ticketLength; i++){
             let randomTicket = Math.floor(Math.random()* chars.length);
             ticket += chars.substring(randomTicket, randomTicket +1);
-            result.innerHTML = ticket;
-            
         }
-    }),2000);
+        function saveTicket(){
+            users.push(names.value, ticket);
+            console.log(users);
+        }
+        saveTicket();
+    }
+    ),1000);
 };
