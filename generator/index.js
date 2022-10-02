@@ -9,7 +9,6 @@ const users = [];
 
 
 submit.addEventListener("click", (e)=>{
-    e.preventDefault();
     if(names.value =="" || !amount.value){
         window.alert("Name or amount Can't be null!")
     } else{
@@ -24,7 +23,6 @@ submit.addEventListener("click", (e)=>{
 });
 
 function generateTicket(e){
-    e.preventDefault();
     setTimeout((function (){
         let chars = "0123456789abcdefghijklmnopqrstuvwxyz!@#$%^&*()ABCDEFGHIJKLMNOPQRSTUVWXYZ";
         let ticketLength = 10;
@@ -38,7 +36,6 @@ function generateTicket(e){
         copy.addEventListener('click', copyText);
 
         function copyText(e){
-            e.preventDefault();
             let copyUssd = document.getElementById('result');
             copyUssd.select();
             document.execCommand('copy');
