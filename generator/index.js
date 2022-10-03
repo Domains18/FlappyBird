@@ -44,7 +44,7 @@ function generateTicket(e){
 
         function saveTicket(){
             users.push(names.value, ticket);
-            console.log(users);
+            // console.log(users);
             }
         saveTicket();
     }

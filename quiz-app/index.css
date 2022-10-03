@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@1,600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#navigation{
+    background-color: chartreuse;
+    height: 50px; 
+}
+body{
+    background-color: #16213E;
+}
+nav{
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav a{
+    margin-left: 200px;
+    padding-right: 20px;
+}
+nav a {
+    margin-top: 15px;
+    text-decoration: none;
+    color: black;
+}
+.form-{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+form{
+display: grid;
+padding: 20px;
+border: 1px solid;
+background-color: purple;
+color: white;
+}
+form h1{
+    font-family: 'Fira Sans', sans-serif;
+    margin-bottom: 5px;
+}
+form p{
+    margin: 10px;
+}
+input{
+    padding: 10px;
+    border-radius: 7px;
+}
+input[type="number"]{
+    margin-bottom: 20px;
+}
+
+input[type="submit"]{
+    width: 100px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
