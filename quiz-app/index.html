@@ -15,14 +15,34 @@
     </nav>
 </aside>
 <section class="form-">
-    <form action="">
+    <form action="" id="details">
+        <h2>Welcome to Quiz Game</h2>
         <h1>Tell Us Your Name</h1>
         <p>Enter Your Name</p>
         <input type="text" placeholder="Name">
         <p>Enter Your Age</p>
-        <input type="number" name="" id="" min="5">
+        <input type="number" name="" id="" min="5" placeholder="age">
         <input type="submit" value="Proceed">
     </form>
+</section>
+
+<section class="questions-container">
+    <div class="category -below10">
+        <form id="below-10">
+            <!-- Some dummy text which will dissapear when we implement functionality-->
+            <h3>Welcome Victor</h3>
+            <p>Who was the first President of United states?</p>
+            <input type="text" name="question" id="answer" placeholder="Answer">
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+    <div class="category above10">
+        <form>
+            <h3>Welcome Sahasam</h3>
+            <p id="question">Who was the first President of United states?</p>
+            
+        </form>
+    </div>
 </section>
 </body>
 <script src="index.js"></script>

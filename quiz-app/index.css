@@ -30,12 +30,15 @@ nav a {
     justify-content: center;
     margin-top: 50px;
 }
+form#details{
+    display: grid;
+}
 form{
-display: grid;
 padding: 20px;
 border: 1px solid;
 background-color: purple;
 color: white;
+height: 400px;
 }
 form h1{
     font-family: 'Fira Sans', sans-serif;
@@ -45,7 +48,7 @@ form p{
     margin: 10px;
 }
 input{
-    padding: 10px;
+    padding: 7px;
     border-radius: 7px;
 }
 input[type="number"]{
@@ -57,4 +60,17 @@ input[type="submit"]{
     background-color: black;
     color: white;
     cursor: pointer;
+}
+input[type ="submit"]:hover{
+    background-color: red;
+}
+#below-10{
+    display: gri
+}
+.category h3{
+    text-align: center;
+
+}
+#below-10{
+    
 }
