@@ -39,7 +39,7 @@ nav a {
     color: white;
     height: 500px;
     display: grid;
-    display: none;
+    /* display: none; */
 }
 form h1{
     font-family: 'Fira Sans', sans-serif;
@@ -86,5 +86,8 @@ input[type ="submit"]:hover{
     padding: 10px;
     margin-bottom: 20px;
     width: 500px;
+}
+.display{
+    display: none;
 }
 /* End of questions */
