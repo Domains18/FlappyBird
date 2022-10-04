@@ -14,5 +14,12 @@ for(i=0; i<categories.length; i++){
 
 //validate user and age
 submitForm.addEventListener('click', ()=>{
-    if()
+    if(!names || !age){
+        window.alert('Name or Age Cannot ne blank');
+    }
+    else{
+        if (age => 15 ){
+            hardQuestions();
+        }
+    }
 });
