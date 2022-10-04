@@ -20,12 +20,15 @@ function runEvent(e){
     if( names== "" || !age.value){
         alert("Name or Age cant be null");
     } else{
-        beginQuestions();
+        if(age.value<15){
+            alert('age is too little');
+        } else{
+            beginQuestions();
+        }
     }
 }
 
 // questions
-
 function beginQuestions(){
     for (i = 0; i < detailForm.length; i++) {
         detailForm[i].classList.add('display');
