@@ -1,25 +1,41 @@
 //assigning variables
 let detailForm = document.getElementsByClassName('form-');
-let name = document.getElementById('name');
+let names = document.getElementById('name');
 let age = document.getElementById('age');
-let categories=document.getElementsByClassName('categories')
+let questions=document.getElementsByClassName('questions')
 //submit variables
 let submitForm = document.getElementById('submitForm');
 
 //lets build that app ;)
 //set question UI to none
-for(i=0; i<categories.length; i++){
-    categories[i].classList.add('display');
+for(i=0; i<questions.length; i++){
+    questions[i].classList.add('display');
 }
 
 //validate user and age
-submitForm.addEventListener('click', ()=>{
-    if(!names || !age){
-        window.alert('Name or Age Cannot ne blank');
+submitForm.addEventListener('click', runEvent);
+
+function runEvent(e){
+    e.preventDefault();
+    if( names== "" || !age.value){
+        alert("Name or Age cant be null");
+    } else{
+        beginQuestions();
     }
-    else{
-        if (age => 15 ){
-            hardQuestions();
-        }
+}
+
+// questions
+
+function beginQuestions(){
+    for (i = 0; i < detailForm.length; i++) {
+        detailForm[i].classList.add('display');
     }
-});
+    for (i = 0; i < questions.length; i++) {
+        questions[i].classList.add('display2');
+    }
+    let userName = document.getElementsByClassName('user');
+    NewText = document.createTextNode("welcome," + " " +names.value);
+    for(i=0; i<userName.length; i++){
+        userName[i].appendChild(NewText)
+    }
+}

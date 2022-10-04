@@ -90,4 +90,7 @@ input[type ="submit"]:hover{
 .display{
     display: none;
 }
+.display2{
+    display: grid;
+}
 /* End of questions */
