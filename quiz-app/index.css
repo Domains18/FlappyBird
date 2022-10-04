@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -30,15 +31,15 @@ nav a {
     justify-content: center;
     margin-top: 50px;
 }
-form#details{
+#details{
+    padding: 30px;
+    margin: 30px;
+    border: 1px solid;
+    background-color: purple;
+    color: white;
+    height: 500px;
     display: grid;
-}
-form{
-padding: 20px;
-border: 1px solid;
-background-color: purple;
-color: white;
-height: 400px;
+    display: none;
 }
 form h1{
     font-family: 'Fira Sans', sans-serif;
@@ -64,13 +65,26 @@ input[type="submit"]{
 input[type ="submit"]:hover{
     background-color: red;
 }
-#below-10{
-    display: gri
-}
-.category h3{
-    text-align: center;
 
+/* Questions styling */
+.questions{
+    display: grid;
+    background-color: white;
+    color: black;
+    margin: 30px;
+    padding: 30px;
+    font-family: 'Comic Neue', cursive;
 }
-#below-10{
-    
+.questions h3{
+    text-align: center;
+    padding: 20px;
 }
+.questions q {
+    padding: 10px;
+}
+.questions input[type="text"]{
+    padding: 10px;
+    margin-bottom: 20px;
+    width: 500px;
+}
+/* End of questions */
