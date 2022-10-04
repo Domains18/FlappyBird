@@ -20,8 +20,8 @@ function runEvent(e){
     if( names== "" || !age.value){
         alert("Name or Age cant be null");
     } else{
-        if(age.value<15){
-            alert('age is too little');
+        if(age.value>15){
+            alert('You are too old for this quiz app!');
         } else{
             beginQuestions();
         }
