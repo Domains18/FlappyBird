@@ -39,6 +39,17 @@ function beginQuestions(){
     let userName = document.getElementsByClassName('user');
     NewText = document.createTextNode("welcome," + " " +names.value);
     for(i=0; i<userName.length; i++){
-        userName[i].appendChild(NewText)
+        userName[i].appendChild(NewText);
+        Startquestions();
     }
+}
+
+function Startquestions (){
+    let answer = document.getElementById('answer');
+    let getAnswer= document.getElementById('getAnswer');
+
+    getAnswer.addEventListener('click', ()=>{
+        if (answer.value = "")
+        //to be continued
+    })
 }
