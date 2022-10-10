@@ -44,12 +44,12 @@ function beginQuestions(){
     }
 }
 
-function Startquestions (){
-    let answer = document.getElementById('answer');
-    let getAnswer= document.getElementById('getAnswer');
+// function Startquestions (){
+//     let answer = document.getElementById('answer');
+//     let getAnswer= document.getElementById('getAnswer');
 
-    getAnswer.addEventListener('click', ()=>{
-        if (answer.value = "")
-        //to be continued
-    })
-}
+//     getAnswer.addEventListener('click', ()=>{
+//         if (answer.value = "")
+//         //to be continued
+//     })
+// }
